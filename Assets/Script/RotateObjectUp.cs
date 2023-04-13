@@ -11,7 +11,7 @@ public class RotateObjectUp : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         if (rotate == false)
             return;
  
-        rotatedObject.transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
+        rotatedObject.transform.Rotate(Vector3.back * rotationSpeed * Time.deltaTime);
     }
  
     public void OnPointerDown(PointerEventData pointerEventData)
